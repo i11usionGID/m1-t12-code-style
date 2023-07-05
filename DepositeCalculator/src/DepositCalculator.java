@@ -28,8 +28,9 @@ public class DepositCalculator {
         years = scanner.nextInt();
         System.out.println("Выберите тип вклада, 1 - вклад с обычным процентом, 2 - вклад с капитализацией:");
         command = scanner.nextInt();
-        if (command == 1)
+        if (command == 1) {
             finalSum = calculateSimplePercent(amount, 0.06, years);
+        }
         else if (command == 2) {
             finalSum = calculateComplexPercent(amount, 0.06, years);
         }
